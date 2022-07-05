@@ -1,0 +1,38 @@
+service: binance-assets-buyer
+frameworkVersion: "3"
+
+useDotenv: true
+
+plugins:
+  - serverless-bundle
+  - serverless-offline
+
+package:
+  individually: true
+
+custom:
+  bundle:
+    sourcemaps: false
+    caching: true
+
+provider: ${file(provider.yml)}
+
+functions:
+  manager:
+    handler: functions/handler.handler
+    events:
+      - schedule:
+          rate: rate(1 day)
+          input:
+            symbol: BTCUSDT
+            quoteOrderQty: 50 # // 50 USDT
+      - schedule:
+          rate: rate(1 day)
+          input:
+            symbol: ETHUSDT
+            quoteOrderQty: 50 # // 50 USDT
+      - schedule:
+          rate: rate(1 day)
+          input:
+            symbol: MATICUSDT
+            quoteOrderQty: 50 # // 50 USDT

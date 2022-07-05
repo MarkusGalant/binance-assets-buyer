@@ -65,12 +65,7 @@ typings/
 # Output of 'npm pack'
 *.tgz
 
-# Yarn Integrity file
-.yarn-integrity
-
-# dotenv environment variables file
-.env
-.env.test
+# Yarn git@github.com:MarkusGalant/binance-assets-buyer.gitst
 
 # parcel-bundler cache (https://parceljs.org/)
 .cache
@@ -102,3 +97,7 @@ dist
 
 # TernJS port file
 .tern-port
+
+# environment variables files
+.env
+.env*

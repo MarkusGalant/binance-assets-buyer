@@ -1,0 +1,31 @@
+{
+    "name": "binance-assets-buyer",
+    "version": "1.0.0",
+    "description": "",
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "scripts": {
+        "lint": "eslint . --ext .ts",
+        "lint:fix": "eslint . --ext .ts --fix",
+        "start": "serverless offline",
+        "build": "serverless package",
+        "deploy": "serverless deploy"
+    },
+    "dependencies": {
+        "binance": "^2.0.32"
+    },
+    "devDependencies": {
+        "@types/aws-lambda": "^8.10.97",
+        "@typescript-eslint/eslint-plugin": "^5.26.0",
+        "@typescript-eslint/parser": "^5.26.0",
+        "aws-sdk": "^2.1143.0",
+        "eslint": "^8.16.0",
+        "eslint-config-prettier": "^8.5.0",
+        "eslint-plugin-prettier": "^4.0.0",
+        "prettier": "^2.6.2",
+        "serverless": "^3.18.2",
+        "serverless-bundle": "^5.3.0",
+        "serverless-offline": "^8.8.0"
+    }
+}
