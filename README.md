@@ -6,6 +6,7 @@ This is an experimental bot for auto buying assets in the binance.com exchange.
 - Download and install NodeJs
 - Download Repo and open Repo root folder.
 - Create .env in root folder and copy , paste below code
+
         API key for account access
         API_KEY = ''
         Secret key for account access
