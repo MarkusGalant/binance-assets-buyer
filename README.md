@@ -17,7 +17,7 @@ This is an experimental bot for auto buying assets in the binance.com exchange.
 - Run this command to install packages `yarn`
 - Run this command to start locally `yarn start`
 
-## Deploy
+## Build
 - Run this command to build `yarn build`
 
 ## Deploy
