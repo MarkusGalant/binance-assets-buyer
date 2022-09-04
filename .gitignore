@@ -101,3 +101,5 @@ dist
 # environment variables files
 .env
 .env*
+
+.webpack

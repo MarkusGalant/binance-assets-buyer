@@ -1,6 +1,6 @@
 import { MainClient } from "binance";
 
-type Event = {
+export type Event = {
   symbol: string;
   quoteOrderQty: number;
 };
@@ -25,14 +25,15 @@ export const handler = async (event: Event) => {
 
     return {
       statusCode: 200,
-      body: JSON.stringify(order),
+      body: order,
     };
   } catch (error) {
     console.log("error", error);
 
-    return {
-      statusCode: 500,
-      body: JSON.stringify(error),
-    };
+    if (error instanceof Error)
+      return {
+        statusCode: 500,
+        body: error,
+      };
   }
 };

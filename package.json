@@ -6,6 +6,7 @@
     "author": "",
     "license": "ISC",
     "scripts": {
+        "create-template": "node ./scripts/create-template/index.js",
         "lint": "eslint . --ext .ts",
         "lint:fix": "eslint . --ext .ts --fix",
         "start": "serverless offline",
@@ -13,13 +14,14 @@
         "deploy": "serverless deploy"
     },
     "dependencies": {
-        "binance": "^2.0.32"
+        "binance": "^2.0.32",
+        "dotenv": "^16.0.2"
     },
     "devDependencies": {
         "@types/aws-lambda": "^8.10.97",
         "@typescript-eslint/eslint-plugin": "^5.26.0",
         "@typescript-eslint/parser": "^5.26.0",
-        "aws-sdk": "^2.1143.0",
+        "aws-sdk": "^2.1209.0",
         "eslint": "^8.16.0",
         "eslint-config-prettier": "^8.5.0",
         "eslint-plugin-prettier": "^4.0.0",
